@@ -28,6 +28,12 @@
                     android:text="@string/overwrite_source"
                     android:textStyle="bold" />
 
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
                 <TextView
                     android:id="@android:id/text1"
                     android:layout_width="wrap_content"
@@ -40,7 +46,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent" >
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -49,6 +55,11 @@
                     android:padding="5dp"
                     android:text="@string/overwrite_destination"
                     android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@android:id/text2"
@@ -62,70 +73,45 @@
         </TableLayout>
     </ScrollView>
 
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:background="?android:attr/dividerHorizontal" />
-
     <LinearLayout
-        style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <Button
             android:id="@android:id/button1"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/overwrite_replace" />
 
         <Button
             android:id="@android:id/button2"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/overwrite_replace_all" />
-    </LinearLayout>
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:background="?android:attr/dividerHorizontal" />
-
-    <LinearLayout
-        style="?android:attr/buttonBarStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
         <Button
             android:id="@android:id/button3"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/overwrite_skip" />
 
         <Button
             android:id="@+id/button4"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/overwrite_skip_all" />
+
+        <Button
+            android:id="@+id/button5"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
     </LinearLayout>
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:background="?android:attr/dividerHorizontal" />
-
-    <Button
-        android:id="@+id/button5"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/cancel" />
 
 </LinearLayout>
