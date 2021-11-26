@@ -13,16 +13,33 @@
         android:textSize="22sp"
         android:textColor="?colorAccent" />
 
-    <ListView
-        android:id="@+id/android:list"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:drawSelectorOnTop="true"
-        android:longClickable="true"
-        android:scrollbarStyle="outsideOverlay"
-        android:smoothScrollbar="true" />
+    <!-- If FAB is moved to activity, PickerFragment should inflate this layout instead -->
 
-	<!-- If FAB is moved to activity, PickerFragment should inflate this layout instead -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF9800"
+            android:onClick="goNewView"
+            android:text="New view" />
+
+        <ListView
+            android:id="@+id/android:list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:longClickable="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:smoothScrollbar="true">
+
+        </ListView>
+    </LinearLayout>
+
     <com.melnykov.fab.FloatingActionButton
         android:id="@+id/fabbutton"
         android:layout_width="wrap_content"
