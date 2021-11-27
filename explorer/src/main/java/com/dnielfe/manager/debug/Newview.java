@@ -17,9 +17,7 @@ public class Newview extends ThemableActivity {
     }
 
     public void goBackToMain(View view) {
-        this.finish();
         Intent intent = new Intent(getBaseContext(), com.dnielfe.manager.BrowserActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 }
