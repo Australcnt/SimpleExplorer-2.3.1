@@ -6,9 +6,17 @@
 
     <include layout="@layout/support_toolbar" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goSearchFile"
+        android:text="Search" />
+
     <fragment
         android:name="com.dnielfe.manager.settings.SettingsFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="626dp"
         android:tag="settingsFragment" />
+
 </LinearLayout>
