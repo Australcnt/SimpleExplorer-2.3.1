@@ -124,6 +124,11 @@ public abstract class AbstractBrowserActivity extends ThemableActivity implement
         mIndicator.setFades(false);
     }
 
+    public void checkDirInfo(View view) {
+        Intent intent = new Intent(this, com.dnielfe.manager.settings.SettingsActivity.class);
+        startActivity(intent);
+    }
+
     private void setupDrawer() {
         mDrawer = (ListView) findViewById(R.id.left_drawer);
 
